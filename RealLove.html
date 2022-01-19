@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DoanXemShop</title>
+  <link rel="stylesheet" href="css\new.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <script src="https://kit.fontawesome.com/97d9be1d23.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <!-- navbar -->
+  <div class="wrapper">
+    <header>
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+      <div class="logo"><a href="index.html">DoanXemShop</a></div>
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="new.html">New</a></li>
+          <li>
+            <a href="product.html" class="desktop-link">Product</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Product</label>
+            <ul>
+              <li><a href="trousers.html">Trousers </a></li>
+              <li><a href="shirt.html">Shirt</a></li>
+              <li><a href="shoes.html">Shoes</a></li>
+              <li><a href="Accessories.html">Accessories</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="Collection.html" class="desktop-link">Collection</a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services">Collection</label>
+            <ul>
+              <li><a href="HotTrend.html">Hot Trend</a></li>
+              <li><a href="FreeShip.html">Free Ship</a></li>
+              <li><a href="RealLove.html">Real Love</a></li>
+              <li>
+                <a href="Sale.html" class="desktop-link">Sale</a>
+                <input type="checkbox" id="show-items">
+                <label for="show-items">Sale</label>
+                <!-- <ul>
+                  <li><a href="#">50%</a></li>
+                  <li><a href="#">Sub Menu 2</a></li>
+                  <li><a href="#">Sub Menu 3</a></li>
+                </ul> -->
+              </li>
+            </ul>
+          </li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="Type Something to Search..." required>
+        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+      </form>
+      <div id="cart">
+      <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+      </div>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Giỏ Hàng</h5>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                    <span class="cart-price cart-header cart-column">Giá</span>
+                    <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                </div>
+                <div class="cart-items">
+                </div>
+                <div class="cart-total">
+                    <strong class="cart-total-title">Tổng Cộng:</strong>
+                    <span class="cart-total-price">0VNĐ</span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                <button type="button" class="btn btn-primary order"><a href="giohang.html">Thanh Toán</a></button>
+            </div>
+        </div>
+    </div>
+     <a href="login.html"><i class="fas fa-user"></i></a> 
+
+
+
+    </nav>
+  </header>
+  </div>
+<!-- slide -->
+<div class="containerslide">
+  <div class="slidershow middle">
+    <div class="slides">
+      <input type="radio" name="r" id="r1" checked>
+      <input type="radio" name="r" id="r2" >
+      <input type="radio" name="r" id="r3">
+      <div class="slide s1">
+        <img src="images/aslide1.jpg">
+      </div>
+      <div class="slide">
+        <img src="images/aslide2.jpg">
+      </div>
+      <div class="slide">
+        <img src="images/aslide3.jpg">
+      </div>
+    <div class="navigation">
+      <label for="r1" class="bar"></label>
+      <label for="r2" class="bar"></label>
+      <label for="r3" class="bar"></label>
+    </div>
+  </div>
+    </div>   
+    
+    </div>
+<!-- ảnh banner -->
+<div class="banner">
+<div class="left">
+      <h1>Mới Nhất</h1>
+      <span>Các Sản Phẩm Của Chúng Tôi Đều được nhập khẩu từ các hệ thống lớn trên toàn thế giới nhằm đem lại chất lượng sử dụng cho mọi người</span>
+</div>
+<div class="right">
+  <img src="images/new.jpg" alt="">
+</div>
+</div>
+
+<div class="duongvien1"> <!-- khai báo đường viền --></div>
+<div class="text-banner">
+  <h2 style="margin-top: 20px;">Top Các Sản Phẩm Mới Nhất</h2>
+</div>
+<!-- ảnh sản phẩm -->
+<section class="container-pro">
+  <div class="container-img">
+    <div class="anb1">
+      <a href=""><img class="img-prd" src="https://vn-test-11.slatic.net/p/9a2128954bf0ad652f7802db13398c65.jpg_720x720q80.jpg_.webp" alt=""></a>
+      <div class="content-product">
+      <h3 class="content-product-h3">Áo cặp đôi đẹp</h3>
+      <div class="content-product-deltals">
+          <div class="price">
+              <span class="money">90000đ</span>
+          </div>
+          <button style="width: 100%;" type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+      </div>
+  </div>
+    </div>
+    <div class="anb2">
+      <a href=""><img class="img-prd" src="https://vn-test-11.slatic.net/p/433e731354760d53362f24f024dd961d.jpg_720x720q80.jpg_.webp" alt=""></a>
+    
+    <div class="content-product">
+      <h3 class="content-product-h3">quần áo gia đình khủng long</h3>
+      <div class="content-product-deltals">
+          <div class="price">
+              <span class="money">105000đ</span>
+          </div>
+          <button style="width: 100%;" type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+      </div>
+      </div>
+  </div>
+    </div>
+    <div class="container-img">
+    <div class="anb3">
+      <a href=""><img class="img-prd" src="https://vn-test-11.slatic.net/p/a680e7acf38b5eafd0321ac8d037fef9.jpg_720x720q80.jpg_.webp" alt=""></a>   
+    <div class="content-product">
+      <h3 class="content-product-h3">ÁO THUN GIA ĐÌNH hoạ tiết heo ngộ ngĩnh</h3>
+      <div class="content-product-deltals">
+          <div class="price">
+              <span class="money">259000đ</span>
+          </div>
+          <button style="width: 100%;" type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+      </div>
+  </div>
+  </div>
+    <div class="anb4">
+      <a href=""><img class="img-prd" src="https://vn-test-11.slatic.net/p/094a911e1e43163dca33035c4b5036cc.jpg_720x720q80.jpg_.webp" alt=""></a>
+    <div class="content-product">
+      <h3 class="content-product-h3">áo thun nam nữ cặp đôi</h3>
+      <div class="content-product-deltals">
+          <div class="price">
+              <span class="money">199000đ</span>
+          </div>
+          <button style="width: 100%;" type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+      </div>
+  </div>
+    </div>
+    </div>
+</section> 
+<section class="container-pro">
+  <div class="container-img">
+    <div class="anb1">
+      <a href=""><img class="img-prd" src="https://vn-test-11.slatic.net/original/a91d58c55ca5766231d7cd5d47df57e2.jpg_720x720q80.jpg_.webp" alt=""></a>
+      <div class="content-product">
+      <h3 class="content-product-h3">áo thun gia đình</h3>
+      <div class="content-product-deltals">
+          <div class="price">
+              <span class="money">50000đ</span>
+          </div>
+          <button style="width: 100%;" type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+      </div>
+  </div>
+    </div>
+    <div class="anb2">
+      <a href=""><img class="img-prd" src="https://vn-test-11.slatic.net/p/f17d675fdb29b8b1703f4322bcaccba9.jpg_720x720q80.jpg_.webp" alt=""></a>
+    
+    <div class="content-product">
+      <h3 class="content-product-h3">áo gia đình du lịch mùa hè</h3>
+      <div class="content-product-deltals">
+          <div class="price">
+              <span class="money">50000đ</span>
+          </div>
+          <button style="width: 100%;" type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+      </div>
+      </div>
+  </div>
+    </div>
+    <div class="container-img">
+    <div class="anb3">
+      <a href=""><img class="img-prd" src="https://vn-test-11.slatic.net/p/dc05400e044ea9d39b914f5dabc44ec9.jpg_720x720q80.jpg_.webp" alt=""></a>   
+    <div class="content-product">
+      <h3 class="content-product-h3"> áo thun form rộng tay lỡ</h3>
+      <div class="content-product-deltals">
+          <div class="price">
+              <span class="money">50000đ</span>
+          </div>
+          <button style="width: 100%;" type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+      </div>
+  </div>
+  </div>
+    <div class="anb4">
+      <a href=""><img class="img-prd" src="https://vn-test-11.slatic.net/original/3b87275b7c5721b394ab0b4b4d41dca4.jpg_720x720q80.jpg_.webp" alt=""></a>
+    <div class="content-product">
+      <h3 class="content-product-h3">ÁO THUN GIA ĐÌNH GẮN KẾT YÊU THƯƠNG doremon</h3>
+      <div class="content-product-deltals">
+          <div class="price">
+              <span class="money">50000đ</span>
+          </div>
+          <button style="width: 100%;" type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+      </div>
+  </div>
+    </div>
+    </div>
+</section> 
+<div class="duongvien1"> <!-- khai báo đường viền --></div>
+
+<!-- in the end -->
+<div class="containerend">
+  <div class="text-banner">
+    <h1>DoanXemShop</h1>
+  <br>
+    <div class="info">
+      <div class="icon facebook">
+        <div class="tooltip">Facebook</div>
+        <span><a href="https://www.facebook.com/dung.le.299231"><i class="fab fa-facebook-f"></i></a></span>
+      </div>
+      <div class="icon twitter">
+        <div class="tooltip">twitter</div>
+        <span><i class="fab fa-twitter"></i></span>
+      </div>
+      <div class="icon instagram">
+        <div class="tooltip">instagram</div>
+        <span><i class="fab fa-instagram"></i></span>
+      </div>
+      <div class="icon youtube">
+        <div class="tooltip">Youtube</div>
+        <span><i class="fab fa-youtube"></i></span>
+      </div>
+    </div>
+    
+  </div>
+  <div class="text-banner">
+    <br>
+    <span class="time">Mon - Sun: 7 am - 11 pm</span>
+  <h4>Store 1: Số 18 Lê Thiện Trị, Hòa Hải, Ngũ Hành Sơn, Đà Nẵng</h4>
+  <span>0942497948</span>
+  <h4>Store 2:107 Hoàng Thúc Trâm</h4>
+  <span>0843342158</span>
+  </div>
+</div>
+<!-- test -->
+<div class="container-clock">
+  <div class="clock">
+    <div class="center-nut"></div>
+    <div class="center-nut2"></div>
+    <div class="indicators">
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+    </div>
+    <div class="sec-hand">
+       <div class="sec"></div>
+    </div>
+    <div class="min-hand">
+       <div class="min"></div>
+    </div>
+    <div class="hr-hand">
+       <div class="hr"></div>
+    </div>
+ </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

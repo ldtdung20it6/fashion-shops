@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DoanXemShop</title>
+  <link rel="stylesheet" href="css\style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <script src="https://kit.fontawesome.com/97d9be1d23.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- navbar -->
+  <div class="wrapper">
+    <header>
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+      <div class="logo"><a href="index.html">DoanXemShop</a></div>
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="new.html">New</a></li>
+          <li>
+            <a href="product.html" class="desktop-link">Product</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Product</label>
+            <ul>
+              <li><a href="trousers.html">Trousers </a></li>
+              <li><a href="shirt.html">Shirt</a></li>
+              <li><a href="shoes.html">Shoes</a></li>
+              <li><a href="Accessories.html">Accessories</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="Collection.html" class="desktop-link">Collection</a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services">Collection</label>
+            <ul>
+              <li><a href="HotTrend.html">Hot Trend</a></li>
+              <li><a href="FreeShip.html">Free Ship</a></li>
+              <li><a href="RealLove.html">Real Love</a></li>
+              <li>
+                <a href="Sale.html" class="desktop-link">Sale</a>
+                <input type="checkbox" id="show-items">
+                <label for="show-items">Sale</label>
+              </li>
+            </ul>
+          </li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="Type Something to Search..." required>
+        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+      </form>
+      <div id="cart">
+      <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+      </div>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Giỏ Hàng</h5>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                    <span class="cart-price cart-header cart-column">Giá</span>
+                    <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                </div>
+                <div class="cart-items">
+                </div>
+                <div class="cart-total">
+                    <strong class="cart-total-title">Tổng Cộng:</strong>
+                    <span class="cart-total-price">0VNĐ</span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                <button type="button" class="btn btn-primary order"><a href="giohang.html">Thanh Toán</a></button>
+            </div>
+        </div>
+    </div>
+     <a href="login.html"><i class="fas fa-user"></i></a> 
+    </nav>
+  </header>
+  </div>
+<!-- slide -->
+<div class="containerslide">
+  <div class="slidershow middle">
+    <div class="slides">
+      <input type="radio" name="r" id="r1" checked>
+      <input type="radio" name="r" id="r2">
+      <input type="radio" name="r" id="r3">
+      <div class="slide s1">
+        <img src="images/aslide1.jpg">
+      </div>
+      <div class="slide">
+        <img src="images/aslide2.jpg">
+      </div>
+      <div class="slide">
+        <img src="images/aslide3.jpg">
+      </div>
+    <div class="navigation">
+      <label for="r1" class="bar"></label>
+      <label for="r2" class="bar"></label>
+      <label for="r3" class="bar"></label>
+    </div>
+  </div>
+    </div>
+    
+    </div>
+<!-- text banner -->
+  <div class="text-banner">
+  <h2 style="margin-top: 20px;">MỚI NHẤT</h2>
+  <span>Các sản phẩm mới nhất của chúng tôi</span>
+    </div>
+<!-- images banner -->
+<section class="container-pro">
+  <div class="container-img">
+    <div class="anb1">
+      <a href="detail.html"><img class="img-prd" src="images/anb1.jpg" alt=""></a>
+      <div class="content-product">
+      <h3 class="content-product-h3">Áo Khoác Azulen</h3>
+      <div class="content-product-deltals">
+          <div class="price">
+              <span class="money">159000đ</span>
+          </div>
+          <button style="width: 100%;" type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+      </div>
+  </div>
+    </div>
+    <div class="anb2">
+      <a href="detail.html"><img class="img-prd" src="images/anb2.jpg" alt=""></a>
+    
+    <div class="content-product">
+      <h3 class="content-product-h3">Áo Khoác Mei</h3>
+      <div class="content-product-deltals">
+          <div class="price">
+              <span class="money">1050000đ</span>
+          </div>
+          <button style="width: 100%;" type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+      </div>
+      </div>
+  </div>
+    </div>
+    <div class="container-img">
+    <div class="anb3">
+      <a href="detail.html"><img class="img-prd" src="images/anb3.jpg" alt=""></a>   
+    <div class="content-product">
+      <h3 class="content-product-h3">Áo Khoác KIANA</h3>
+      <div class="content-product-deltals">
+          <div class="price">
+              <span class="money">259000đ</span>
+          </div>
+          <button style="width: 100%;" type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+      </div>
+  </div>
+  </div>
+    <div class="anb4">
+      <a href="detail.html"><img class="img-prd" src="images/anb4.jpg" alt=""></a>
+    <div class="content-product">
+      <h3 class="content-product-h3">Áo Khoác Mei2</h3>
+      <div class="content-product-deltals">
+          <div class="price">
+              <span class="money">199000đ</span>
+          </div>
+          <button style="width: 100%;" type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+      </div>
+  </div>
+    </div>
+    
+    </div>
+</section>    
+<!-- xem them -->
+  <div class="text-banner"><a href="new.html">Xem Thêm</a></div>       
+  <div class="duongvien"> <!-- khai báo đường viền --></div>
+  <div class="duongvien1"> <!-- khai báo đường viền --></div>
+<!-- text banner1 -->
+  <div style="margin-top: 20px;margin-bottom: 20px;" class="text-banner"><h2>Nhóm Sản Phẩm Được Quan Tâm</h2></div> 
+<!-- images banner1 -->
+<div class="container-imgs">
+  <div class="left">
+    <a href="product.html"><img src="images/atd1.jpg" alt=""></a>
+    <h2 style="text-align: center;"><a style="color: black;" href="product.html">QUẦN ÁO</a></h2>
+    
+  </div>
+  <div class="mid">
+    <a href="shoes.html"><img src="images/atd2.jpg" alt=""></a>
+    <h2 style="text-align: center;"><a style="color: black;" href="shoes.html">SNEAKERS</a></h2>
+
+  </div>
+  <div class="right">
+    <a href="Accessories.html"><img src="images/atd3.jpg" alt=""></a>
+    <h2 style="text-align: center;"><a style="color: black;" href="Accessories.html">PHỤ kIỆN</a></h2>
+
+  </div>
+</div>
+ 
+  <div class="duongvien2"> <!-- khai báo đường viền --></div>
+<!-- text banner 2 -->
+  <div class="text-banner">
+  <h2 style="margin-bottom: 30px;">Bộ Sưu Tập</h2>
+    </div>
+<!-- link ytb --> 
+  <div class="container1">
+    <div class="linkytb">
+      <iframe class="linksytb" src="https://www.youtube.com/embed/0SffMTl-36U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</iframe>
+</div>
+    </div>
+  <div class="duongvien2"> <!-- khai báo đường viền --></div>
+
+<!-- text -->
+<div class="text-banner">
+  <h2 style="margin-bottom: 30px;">Gợi ý dành riêng cho bạn</h2>
+</div>
+<!-- images banner 2 -->
+<section class="container-pro">
+  <div class="container-img">
+    <div class="anb1">
+      <a href=""><img class="img-prd" src="images/agy1.jpg" alt=""></a>
+      <div class="content-product">
+      <h3 class="content-product-h3">Áo Thun</h3>
+      <div class="content-product-deltals">
+          <div class="price">
+              <span class="money">159000đ</span>
+          </div>
+          <button style="width: 100%;" type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+      </div>
+  </div>
+    </div>
+    <div class="anb2">
+      <a href=""><img class="img-prd" src="images/agy2.jpg" alt=""></a>
+    
+    <div class="content-product">
+      <h3 class="content-product-h3">Quần Rin</h3>
+      <div class="content-product-deltals">
+          <div class="price">
+              <span class="money">1050000đ</span>
+          </div>
+          <button style="width: 100%;" type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+      </div>
+      </div>
+  </div>
+    </div>
+    <div class="container-img">
+    <div class="anb3">
+      <a href=""><img class="img-prd" src="images/agy3.jpg" alt=""></a>   
+    <div class="content-product">
+      <h3 class="content-product-h3">Giày Sneaker</h3>
+      <div class="content-product-deltals">
+          <div class="price">
+              <span class="money">259000đ</span>
+          </div>
+          <button style="width: 100%;" type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+      </div>
+  </div>
+  </div>
+    <div class="anb4">
+      <a href=""><img class="img-prd" src="images/agy4.jpg" alt=""></a>
+    <div class="content-product">
+      <h3 class="content-product-h3">Kính Cận</h3>
+      <div class="content-product-deltals">
+          <div class="price">
+              <span class="money">199000đ</span>
+          </div>
+          <button style="width: 100%;" type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+      </div>
+  </div>
+    </div>
+    </div>
+</section>  
+
+<div class="text-banner">
+  <a href="product.html">Xem Thêm</a>
+   
+  
+</div>
+<div class="duongvien"> <!-- khai báo đường viền --></div>
+<div class="duongvien2"> <!-- khai báo đường viền --></div>
+<!-- instagram -->
+<div class="text-banner">
+  <h2>Instagram</h2>
+  <span>@doanxem.vn</span>
+</div>
+<!-- ảnh instagram -->
+<div class="container-pro">
+  <div class="container-img">
+    <div class="anb1">
+      <a href=""><img src="images/ins2.jpg" alt=""></a>
+     <!-- nút like 1 -->
+    <div class="heart-btn">
+      <div class="content1">
+        <span class="heart"></span>
+        <span class="text">Like</span>
+        <span class="numb"></span>
+      </div>
+    </div>
+
+    </div>
+     
+    <div class="anb2">
+      <a href=""><img src="images/ins3.jpg" alt=""></a>
+       <!-- nút like 2 -->
+    <div class="heart-btn2">
+      <div class="content2">
+        <span class="heart2"></span>
+        <span class="text2">Like</span>
+        <span class="numb2"></span>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="container-img">
+    <div class="anb3">
+      <a href=""><img src="images/ins4.jpg" alt=""></a>
+      <!-- nút like 3 -->
+    <div class="heart-btn3">
+      <div class="content3">
+        <span class="heart3"></span>
+        <span class="text3">Like</span>
+        <span class="numb3"></span>
+      </div>
+    </div>
+    </div>
+    <div class="anb4">
+      <a href=""><img src="images/ins5.jpg" alt=""></a>
+      <!-- nút like 4 -->
+    <div class="heart-btn4">
+      <div class="content4">
+        <span class="heart4"></span>
+        <span class="text4">Like</span>
+        <span class="numb4"></span>
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+<div class="duongvien2" style="margin-bottom: 50px;"> <!-- khai báo đường viền --></div>
+<!-- nhận xét của khách hàng -->
+<div class="text-banner">
+  <h2>Nhận Xét Của Khách Hàng</h2>
+</div>
+
+  <div class="containercards">
+  <div class="containercard">
+  <div class="front-face">
+    <div class="cover">
+      <img src="images/1.jpg" class="profile">
+    </div>
+    <div class="name">Lê Hoàng Sang</div>
+    <div class="tag">Khách Hàng</div>
+    <h5 class="about">Trước khi đến shop thì mình thấy feedback của mọi người phần lớn về nhân viên. Nhưng khi mình đến thì nhân viên dễ thương cực. Mình thử khá nhiều đồ, xong ôm ra đưa bạn nhân viên để thanh toán, mà bạn đó tưởng mình không lấy, cũng cặm cụi ngồi gấp, thái độ vẫn thân thiện. Đến lúc mình tính tiền, có bạn ở phía sau mình không mua gì hết, vẫn nhận được lời cảm ơn từ bạn thu ngân. Sẽ còn ghé shop dài dài
+      <br>
+      <p style="text-align: center;">Hoàng Sang/Facebook</p>
+    </h5>
+  </div>
+  <div class="back-face">
+    <h1>Lê Hoàng Sang
+    </h1>
+    <p style="text-align: center;">...</p>
+    <a href="https://www.facebook.com/sunsun2105"><i class="fab fa-facebook-square"></i></a>
+    <i class="fab fa-twitter-square"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-youtube"></i>
+    <i class="fab fa-linkedin"></i>
+</div>
+</div>
+
+  <div class="containercard1">
+  <div class="front-face1">
+    <div class="cover1">
+      <img src="images/2.jpg" class="profile1">
+    </div>
+    <div class="name1">Nguyễn Như Ngọc</div>
+    <div class="tag1">Khách Hàng</div>
+    <h5 class="about1">
+      Mình ghé DoanXemShop rất nhìu lần, rất hài lòng về đồ cũng như giá cả ở shop... Và cũng như các lời đánh giá, các bạn nhân viên thì khá tốt, anh bảo vệ cũng rất nhiệt tình, riêng bạn thu ngân mình đã gặp bạn ấy 2 3 lần, nhưng thái độ chưa đc niềm nở vs khách cho lắm... Mong shop nhắc nhở nhẹ nhàng vs nhân viên thôi, để các bạn ấy có thể vui vẻ hơn, mà khách cũng đc thoải mái... Nên chỉ mong nhân viên nhiệt tình vui vẻ, khách cũng thoái mái khi đến vs DoanXemShop
+      <br>
+      <p style="text-align: center;">Nguyễn Như Ngọc/Facebook</p>
+    </h5>
+  </div>
+  <div class="back-face1">
+    <h1>Nguyễn Như Ngọc
+    </h1>
+    <p style="text-align: center;">올바른 위치에있을 때만 존경 받으세요
+    </p>
+    <a href="https://www.facebook.com/profile.php?id=100041754608097"><i class="fab fa-facebook-square"></i></a>
+    <i class="fab fa-twitter-square"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-youtube"></i>
+    <i class="fab fa-linkedin"></i>
+</div>
+</div>
+  <div class="containercard2">
+  <div class="front-face2">
+    <div class="cover2">
+      <img src="images/3.jpg" class="profile1">
+    </div>
+    <div class="name2">Phạm Văn Đan</div>
+    <div class="tag2">Khách Hàng</div>
+    <h5 class="about2">
+      Hôm nay là lần thứ 2 ghé DoanXemShop chi nhánh Nguyễn Văn Bảo (lần trước là tuần trước). Đồ đẹp quá chịu không nổi phải ghé qua hốt về. Dù đi hơi xa nhưng cảm thấy thỏa mãn vô cùng, đồ xinh ơi là xinh, giá cả ok, các bạn nhân viện rất dễ thương (mình lựa cũng hơi lâu, lại còn hỏi tới hỏi lui mà các bạn ý lúc nào cũng cười thân thiện, nhiệt tình), chú bảo vệ cũng nhiệt tình. Đợi shop có hàng mới chắc lại ghé qua tiếp.
+      <br>
+      <p style="text-align: center;">Phạm Văn Đan/Facebook</p>
+    </h5>
+  </div>
+  <div class="back-face2">
+    <h1>Phạm Văn Đan
+    </h1>
+    <p style="text-align: center;">...
+    </p>
+    <a href="https://www.facebook.com/profile.php?id=100045416492431"><i class="fab fa-facebook-square"></i></a>
+    <i class="fab fa-twitter-square"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-youtube"></i>
+    <i class="fab fa-linkedin"></i>
+</div>
+</div>
+  </div>
+  <div class="duongvien2" style="margin-bottom: 50px;"> <!-- khai báo đường viền --></div>
+
+<!-- in the end -->
+<div class="containerend">
+  <div class="text-banner">
+    <h1>DoanXemShop</h1>
+  <br>
+    <div class="info">
+      <div class="icon facebook">
+        <div class="tooltip">Facebook</div>
+        <span><a href="https://www.facebook.com/dung.le.299231"><i class="fab fa-facebook-f"></i></a></span>
+      </div>
+      <div class="icon twitter">
+        <div class="tooltip">twitter</div>
+        <span><i class="fab fa-twitter"></i></span>
+      </div>
+      <div class="icon instagram">
+        <div class="tooltip">instagram</div>
+        <span><i class="fab fa-instagram"></i></span>
+      </div>
+      <div class="icon youtube">
+        <div class="tooltip">Youtube</div>
+        <span><i class="fab fa-youtube"></i></span>
+      </div>
+    </div>
+    
+  </div>
+  <div class="text-banner">
+    <br>
+    <span class="time">Mon - Sun: 7 am - 11 pm</span>
+  <h4>Store 1: Số 18 Lê Thiện Trị, Hòa Hải, Ngũ Hành Sơn, Đà Nẵng</h4>
+  <span>0942497948</span>
+  <h4>Store 2:107 Hoàng Thúc Trâm</h4>
+  <span>0843342158</span>
+  </div>
+</div>
+<!-- đồng hồ -->
+<div class="container-clock">
+  <div class="clock">
+    <div class="center-nut"></div>
+    <div class="center-nut2"></div>
+    <div class="indicators">
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+    </div>
+    <div class="sec-hand">
+       <div class="sec"></div>
+    </div>
+    <div class="min-hand">
+       <div class="min"></div>
+    </div>
+    <div class="hr-hand">
+       <div class="hr"></div>
+    </div>
+ </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
